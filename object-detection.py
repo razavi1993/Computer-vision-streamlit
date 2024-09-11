@@ -9,7 +9,7 @@ def run():
     object_names = list(model.names.values())
 
     with st.form("My Image"):
-        uploaded_file = st.file_uploader("Upload Video", type=['png'])
+        uploaded_file = st.file_uploader("Upload Image", type=['png'])
         st.form_submit_button(label='Detect')
 
     if uploaded_file is not None:
